@@ -15,7 +15,8 @@ public class DataInfo {
   }
 
   public enum Gender {
-    MALE, FEMALE
+    MALE,
+    FEMALE
   }
 
   public List<Person> generatePeople() {
@@ -25,8 +26,7 @@ public class DataInfo {
         new Person("Tom", MALE),
         new Person("Sally", FEMALE),
         new Person("Mary", FEMALE),
-        new Person("Jane", FEMALE)
-    );
+        new Person("Jane", FEMALE));
   }
 
 }

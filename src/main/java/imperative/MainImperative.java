@@ -1,6 +1,6 @@
 package imperative;
 
-import static datainfo.DataInfo.Gender.*;
+import static datainfo.DataInfo.Gender.FEMALE;
 
 import datainfo.DataInfo;
 import datainfo.DataInfo.Person;
@@ -21,8 +21,18 @@ public class MainImperative {
       }
     }
   }
-
-
 }
+/*
+ * adding extra space to make MainImperative line up with MainDeclarative
+ *
+ * */
 
+class _Function {
+  public static void main(String[] args) {
+    int plusOne = increment(1);
+  }
 
+  static int increment(int num) {
+    return num += 1;
+  }
+}

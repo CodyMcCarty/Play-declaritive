@@ -1,0 +1,22 @@
+
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ó…Ûßýÿÿÿÿ
+T
+java:S1854"9Remove this useless assignment to local variable "males".(Ä˜žÃýÿÿÿÿ
+Q
+java:S1854";Remove this useless assignment to local variable "females".(ÒËéË
+h
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹
+B
+java:S1481",Remove this unused "females" local variable.(ÒËéË
+h
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹
+E
+java:S1481"*Remove this unused "males" local variable.(Ä˜žÃýÿÿÿÿ
+V
+java:S1854"";Remove this useless assignment to local variable "tenFold".(”Üƒ£þÿÿÿÿ
+G
+java:S1481"",Remove this unused "tenFold" local variable.(”Üƒ£þÿÿÿÿ
+q
+java:S4276%"VRefactor this code to use the more specialised Functional Interface 'IntUnaryOperator'(¢µ¹£øÿÿÿÿ
+k
+java:S4276&"VRefactor this code to use the more specialised Functional Interface 'IntUnaryOperator'(ªœ­;
