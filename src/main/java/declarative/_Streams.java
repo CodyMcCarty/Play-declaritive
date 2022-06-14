@@ -1,5 +1,7 @@
 package declarative;
 
+import static datainfo.DataInfo.Gender.FEMALE;
+
 import datainfo.DataInfo;
 import datainfo.DataInfo.Gender;
 import datainfo.DataInfo.Person;
@@ -30,6 +32,9 @@ public class _Streams {
         .map(stringIntegerFunction)
         .filter(integerPredicate)
         .collect(integerListCollector);
+
+    boolean isAllFemale = people.stream()
+        .allMatch(person -> person.getGender().equals(FEMALE));
   }
 
 }
