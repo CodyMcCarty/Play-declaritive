@@ -32,6 +32,7 @@ public class MainDeclarative {
 // messing around with functional interface
 class _FunctionDec {
   public static void main(String[] args) {
+    DataInfo d = new DataInfo();
     int plusOne = increment.apply(1);
     int tenFold = timesTen.apply(plusOne);
 
@@ -50,6 +51,11 @@ class _FunctionDec {
     boolean isTrue2 = isMale
         .and(isStartWithC)
         .test(new Person("Cody", MALE));
+
+    Supplier<String> getDbConnecitonUrl = () -> "jdbc://localhost:5432/users";
+    String DBUrl = getDbConnecitonUrl.get();
+    Supplier<List<Person>> getPeople = () -> d.generatePeople();
+    List<Person> people = getPeople.get();
   }
 
   static Function<Integer, Integer> increment = num -> num + 1;
@@ -79,4 +85,6 @@ class _FunctionDec {
   };
   static Predicate<Person> isMale = (person) -> person.getGender().equals(MALE);
   static Predicate<Person> isStartWithC = (person) -> person.getName().startsWith("C");
+
+
 }
