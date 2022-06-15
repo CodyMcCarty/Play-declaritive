@@ -1,6 +1,8 @@
 package declarative;
 
+import java.util.Locale;
 import java.util.function.Consumer;
+import java.util.function.Function;
 
 public class CallBacks {
 
@@ -22,6 +24,12 @@ public class CallBacks {
     hello("Cody", null, value -> System.out.println("You need a last name, " + value));
     System.out.println("\n");
     hello2("John", null, () -> System.out.println("Just a runnable"));
+
+    // just curious is there's a bytecode difference between lambdas and method references.
+    Function<String, String> uppCaseName = name -> name.toUpperCase();
+    Function<String, String> uppCaseName2 = String::toUpperCase;
+    String withLambda = uppCaseName.apply("cody");
+    String withMethodRef = uppCaseName2.apply("bob");
 
 
   }
